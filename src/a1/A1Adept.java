@@ -124,7 +124,7 @@ public class A1Adept {
 		}
 		
 		for (int i = 0; i < customerArray.length; i++) {
-			System.out.println(customerArray[i].total);
+			
 		}
 	
 		double sum = 0;
