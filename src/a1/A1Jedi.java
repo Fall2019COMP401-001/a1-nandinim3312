@@ -45,9 +45,23 @@ public class A1Jedi {
 						index = p;
 					}
 				}
-				
 				numberBought[index] = numberBought[index] + howMany;
-				numberOfCustomers[index] = numberOfCustomers[index] + 1;
+				
+				String[] alreadyBought = new String[index];
+				alreadyBought[index] = currItem;
+				
+				for (int t = 0; t < num; t++) {
+					if (alreadyBought[t] == null) {
+					
+					} else {
+					
+					if (alreadyBought[t].equals(currItem)) {
+						numberOfCustomers[index] = numberOfCustomers[index];
+					} else {
+						numberOfCustomers[index] = numberOfCustomers[index] + 1;
+					}
+					}
+				}	
 			}
 			
 	

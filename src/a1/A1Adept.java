@@ -117,10 +117,14 @@ public class A1Adept {
 		double leastSpent = mostSpent;
 		int r = 0;
 		for (int i = 0; i < k; i++) {
-			if (customerArray[i].total < mostSpent) {
+			if (customerArray[i].total < leastSpent) {
 			leastSpent = customerArray[i].total;
 			r = i;
 			}
+		}
+		
+		for (int i = 0; i < customerArray.length; i++) {
+			System.out.println(customerArray[i].total);
 		}
 	
 		double sum = 0;
