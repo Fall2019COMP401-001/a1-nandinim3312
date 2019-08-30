@@ -129,8 +129,8 @@ public class A1Adept {
 		}
 		double average = sum / k;
 		
-		System.out.println("Biggest: " + customerArray[f].first + " " + customerArray[f].last + "(" + (String.format ("%.2f", mostSpent)) + ")");			
-		System.out.println("Smallest: " + customerArray[r].first + " " + customerArray[r].last + "(" + (String.format ("%.2f", leastSpent))+ ")");
+		System.out.println("Biggest: " + customerArray[f].first + " " + customerArray[f].last + " (" + (String.format ("%.2f", mostSpent)) + ")");			
+		System.out.println("Smallest: " + customerArray[r].first + " " + customerArray[r].last + " (" + (String.format ("%.2f", leastSpent))+ ")");
 		System.out.println("Average: " + (String.format ("%.2f", average)));
 		
 	}
