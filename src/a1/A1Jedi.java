@@ -34,36 +34,35 @@ public class A1Jedi {
 			
 			int num = scan.nextInt();
 			
+			String[] alreadyBought = new String[num];
+			
+			int index = 0;
 			// Per grocery item
 			for (int a = 0; a < num; a++) {
 				int howMany = scan.nextInt();
 				String currItem = scan.next();
 				
-				int index = 0;
+				// int index = 0;
 				for (int p = 0; p < j; p++) {
 					if (groceryItem[p].equals(currItem)) {
 						index = p;
 					}
 				}
 				numberBought[index] = numberBought[index] + howMany;
-				
-				String[] alreadyBought = new String[index];
-				alreadyBought[index] = currItem;
-				
-				for (int t = 0; t < num; t++) {
+							
+				for (int t = 0; t < alreadyBought.length; t++) {
 					if (alreadyBought[t] == null) {
-					
-					} else {
-					
-					if (alreadyBought[t].equals(currItem)) {
-						numberOfCustomers[index] = numberOfCustomers[index];
-					} else {
+						alreadyBought[t] = currItem;
 						numberOfCustomers[index] = numberOfCustomers[index] + 1;
+					} if (alreadyBought[t].equals(currItem)) {
+						t = alreadyBought.length;
+					} else {
+						
 					}
-					}
-				}	
+				}
 			}
 			
+		
 	
 	}
 		for (int y = 0; y < j; y++) {
